@@ -1,0 +1,15 @@
+while True:
+    temp = input('请输入年份')
+    years = int(float(temp))
+    skyremainder = years % 10
+    Earthemainder = years % 12
+    SKY = ['庚', '辛', '壬', '癸', '甲', '乙', '丙', '丁', '戊', '己']
+    EARTH = ['申', '酉', '戌', '亥', '子', '丑', '寅', '卯', '辰', '巳', '午', '未']
+    A = SKY[skyremainder]
+    B = EARTH[Earthemainder]
+    print('公元', end='')
+    print(temp, end='')
+    print('年为', end='')
+    print(A, end='')
+    print(B, end='')
+    print('年')
